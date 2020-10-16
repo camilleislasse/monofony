@@ -11,43 +11,26 @@
 
 Installation
 ------------
-
-To create your Monofony-based application, first make sure you use PHP 7.2 or higher and have [Composer](https://packagist.org/) installed.
-
-Install Monofony using composer
+With Docker
 ```bash
-export SYMFONY_ENDPOINT=https://flex.symfony.com/r/github.com/symfony/recipes-contrib/871
-composer create-project monofony/skeleton acme
+$ make monofony-install
 ```
 
-Install project :
+Remove the stack (lost dv data)
 ```bash
-$ bin/console app:install
-$ yarn install && yarn build (or "yarn dev" for development usage)
-$ symfony server:start --no-tls
+$ make remove-docker-stack:
 ```
+
+Open a php terminal
+```bash
+$ make remove-docker-stack:
+```
+
 
 Documentation
 -------------
  
 Documentation is available at [https://monofony.readthedocs.io/en/latest/](https://monofony.readthedocs.io/en/latest/).
-
-Demo
-----
-
-A Demo is available.
-
-**Admin**
-- Username: admin@example.com
-- Password: admin
-
-[View Monofony admin](https://monofony.mobizel.com/admin)
-
-**Front** 
-- Username: customer@example.com
-- Password: password
-
-[View Monofony front](https://monofony.mobizel.com)
 
 Community
 ---------

@@ -104,3 +104,7 @@ monofony-install:init-docker-stack composer-install
 	$(SF) app:install
 	$(PHP) yarn install && $(PHP) yarn build
 .PHONY: monofony-install
+
+open-php:
+	$(PHP) sh
+.PHONY: open-php
