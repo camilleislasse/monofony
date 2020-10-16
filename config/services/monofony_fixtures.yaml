@@ -1,0 +1,12 @@
+services:
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+        bind:
+            $publicDir: '%kernel.project_dir%/public'
+            $environment: '%kernel.environment%'
+
+    app_fixture:
+        namespace: App\
+        resource: '../../src/Monofony/Pack/FixturesPack/Recipe/src/*'
+        exclude: '../../src/Monofony/Pack/FixturesPack/Recipe/src/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
